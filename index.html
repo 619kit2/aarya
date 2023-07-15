@@ -126,27 +126,33 @@
         font-size: 14px;
       }
 
-      .header {
-        flex-direction: column;
-        height: 50%;
-      }
+     /* Add the following CSS code inside the media query for max-width: 460px */
 
-      /* .social-media {
-        justify-content: center;
-      } */
+.header {
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  padding: 20px 0;
+}
 
-      .social-media a {
-        margin-top: 10px;
-      }
+.header-menu {
+  margin-top: 20px;
+}
 
-      .social-media a:first-child {
-        margin-top: 0;
-      }
+.header-menu a {
+  margin: 10px 0;
+}
 
-      .social-media a {
-        width: 25px;
-        height: 25px;
-      }
+.social-media {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  width: 40px;
+  height: 40px;
+}
+
 
       .aarya {
     display: block; /* Display the logo in desktop mode */
