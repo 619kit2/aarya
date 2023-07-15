@@ -11,7 +11,7 @@
     body {
       font-family: Arial, sans-serif;
       background-image: url('./1348.jpg');
-      background-repeat: no-repeat;
+      background-repeat: no-repeat; 
       background-size: cover;
       color: white;
       margin: 0;
@@ -111,7 +111,12 @@
     }
 
     /* Responsive styles */
-    @media (max-width: 460px) {
+    @media (max-width: 1080px) {
+
+      .body{
+        background-image: url('./1349.jpg');
+      }
+
       .container {
         padding: 20px;
       }
@@ -128,39 +133,47 @@
 
      /* Add the following CSS code inside the media query for max-width: 460px */
 
-.header {
-  flex-direction: column;
-  height: auto;
-  align-items: center;
-  padding: 20px 0;
-}
+      .header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 20px 0;
+      }
 
-.header-menu {
-  margin-top: 20px;
-}
+      .header-menu {
+        margin-top: 20px;
+        font-size: 2em;
+      }
 
-.header-menu a {
-  margin: 10px 0;
-}
-
-.social-media {
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-media a {
-  width: 40px;
-  height: 40px;
-}
+      .header-menu a {
+        margin: 0px 0;
+      }
 
 
-      .aarya {
-    display: block; /* Display the logo in desktop mode */
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 100px;
-  }
+
+      .social-media {
+        justify-content: flex-end;
+        margin-top: 20px;
+      }
+
+      .social-media a {
+        width: 40px;
+        height: 40px;
+        
+      }
+
+      .contact{
+        padding-left:1em;
+      }
+
+      .h1-smaller {
+        font-size: 3em;
+        margin: 0px;
+      }
+
+      h2{
+        margin-top: 0;
+      }
     }
   </style>
 </head>
@@ -168,10 +181,10 @@
   
   <div class="container">
     <div class="header">
-      <h1>Aarya Khopkar</h1>
+      <h1 class="aarya h1-smaller">Aarya Khopkar</h1>
       <div class="header-menu">
         <a href="#description">Description</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="contact">Contact</a>
       </div>
       
       <div class="social-media">
