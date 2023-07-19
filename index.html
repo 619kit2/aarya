@@ -13,7 +13,9 @@
       font-family: Arial, sans-serif;
       background-image: url('./1348.jpg');
       background-repeat: no-repeat; 
+      background-position: center center;
       background-size: cover;
+      background-attachment: fixed;
       color: white;
       margin: 0;
       padding: 0;
@@ -137,10 +139,6 @@
     /* Responsive styles */
     @media only screen and (max-width: 1080px) {
 
-      .body{
-        background-image: url('./1349.jpg');
-      }
-
       .container {
         padding: 20px;
       }
@@ -174,7 +172,7 @@
 
       .social-media {
         justify-content: flex-end;
-        margin-top: 20px;
+        /* margin-top: 20px; */
       }
 
       .social-media a {
@@ -194,6 +192,10 @@
 
       h2{
         margin-top: 0;
+      }
+
+      #description{
+        font-size: 2rem;
       }
     }
   </style>
